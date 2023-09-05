@@ -7,56 +7,100 @@
 </head>
 <body>
     <header> 
-        <a href="index.html">Main</a>
+        <a href="/index.html">Main</a>
         <a href="/sidur/about.html">Um okkur</a>
         <a href="/sidur/menu.html">Matseðill</a>
         <a href="/sidur/order.html">Panta</a>
     </header>
 
     <h1>Pantanir</h1>
+
     <p>
         Pantaðu borð og mættu til okkar 
         eða pantaðu mat sem við sendum þér eða þú sækir.
-    
+    </p>
+        
     <form>
         <fieldset>
-            <h3>Panta borð</h3>
-            <label>
-                Hvenær viltu koma?
+
+            <legend><h3>Panta borð</h3></legend>
+            <div>
+                <label for="date">Hvenær viltu koma?</label>
                 <input type="date" id="date" value="2023-09-04" min="2023-09-04" max="2030-01-01">
-                Hve mörg?
+            </div>
+            
+            <div>
+                <label for="number">Hve mörg?</label>
                 <input type="number" id="number" value="1" min="1" max="10">
-            </label>
+
+            </div>
+
             <div>
-                <label for="comment">Viltu taka eitthvað fram?
+                <label for="comment">Viltu taka eitthvað fram?</label>
                     <textarea name="comment" id="comment"></textarea>
-                </label>
             </div>
-            <button>Panta borð</button>
 
         </fieldset>
 
         <fieldset>
-            <legend> Þinar upplýsingar</legend>
-            <label>
-                Nafn: 
-                <input type="text" id="name" required>
-                Netfang:
-                <input type="text" id="Email" required>
-                Sími:
-                <input type="number" id="Phone" placeholder="0000000" required>
-            </label>
-        </fieldset>
 
-        <fieldset>
+            <legend><h3>Panta mat</h3></legend>
+
             <div>
-                <label>
-                    <input name="Agree condition and terms" type="checkbox" required>
-                    Ég samþykki skilmála Veitingastaðsins
-                    <br><button>panta</button>
-                </label>
-                
+
+                <label for="réttir">Réttir</label>
+                <select name="text" id="Réttir">
+                    <option value="Lasagna">Lasagna</option>
+                    <option value="Sveppa risotto">Sveppa risotto</option>
+                    <option value="Ferskt pasta með pestó">Ferskt pasta með pestó</option>
+                    <option value="Quesadilla">Quesadilla</option>
+                    <option value="Falafel með hummus">Falafel með hummus</option>
+                </select>
+
             </div>
+            
+            <div>
+                <label for="text">Heimilisfang</label>
+                <input type="text" name="Heimilisfang" 
+                id="Heimilisfang" autocomplete="Heimilisfang" 
+                required enterkeyhint="next"> </input>
+            </div>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend><h3>Þinar upplýsingar</h3></legend>
+
+            <div>
+                <label for="text">Nafn</label>
+                <input type="text" id="Nafn" required>
+            </div>
+
+            <div>
+                <label for="text">Tölvupóst</label>
+                <input type="text" id="Tölvupóst" required>
+            </div>
+            
+            <div>
+                <label for="number">Sími</label>
+                <input type="number" id="Sími" placeholder="0000000" required>
+            </div>
+               
+        </fieldset>
+
+        <fieldset>
+
+            <legend><h3>Samþykkja og panta</h3></legend>
+            <div>
+                <label for="checkbox">Ég samþykki skilmála Veitingastaðsins</label>
+                <input name="Agree condition and terms" type="checkbox" required>
+            </div>
+
+            <div>
+                <button>panta</button>
+            </div>
+                
         </fieldset>
     </form>
 
