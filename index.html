@@ -1,141 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="is">
+
 <head>
-    <meta charset="UTF-8">
-    <meta property="og:title" content="Lawless Restaurant">
-    <meta property="og:url" content="https://lawless86.netlify.app/">
-    <meta property="og:image" content="/myndir/sharing.jpeg">
-    <meta property="og:description" content="Best Restaurant for web devs"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lawless Restaurant</title>
-
+  <meta charset="utf-8">
+  <title>Lawless Veitingastaðurinn</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <meta name="description" content="Forsíða Veitingastaðsins, veitingastaður með allar þær veitingar sem þig vantar.">
+  <meta property="og:title" content="Lawless86 Restaurant">
+  <meta property="og:description" content="Velkomin á Veitingastaðinn!">
+  <meta property="og:image" content="./myndir/sharing.jpg">
+  <meta property="og:url" content="https://lawless86.netlify.app/">
 </head>
+
 <body>
+  <header>
+    <h1>Lawless86</h1>
+    <p>Á Veitingastaðnum hugsum við vel um þig og gefum þér gott að borða.</p>
+  </header>
 
-    <div role="navigation">
+  <p class="sr-only"><a href="#efni">Beint í efni</a></p>
 
-        <a href="/index.html">Main</a>
-        <a href="/sidur/about.html">Um okkur</a>
-        <a href="/sidur/menu.html">Matseðill</a>
-        <a href="/sidur/order.html">Panta</a>
+  <nav>
+    <ul>
+      <li><strong>Forsíða</strong></li>
+      <li><a href="sidur/about.html">Um Veitingastaðinn</a></li>
+      <li><a href="sidur/menu.html">Matseðill</a></li>
+      <li><a href="sidur/order.html">Pöntunarsíða</a></li>
+    </ul>
+  </nav>
 
-    </div>
-
-    <header>
-
-        <h1>Lawless86</h1>
-        <p><strong>
-            Á Lawless86 hugsum við vel um þig og gefum þér gott að borða.
-        </strong></p>
-
-    </header>
-
-    <section>
-
-        <h2>Lawless86</h2>
-
-    </section>
-
-
-    <div>
-
+  <main id="efni">
+    <div class="boxes">
+      <section class="box">
         <h3>Opnunartími</h3>
         <dl>
-            <dt><strong>Mánudaga til fimmtudaga</strong></dt>
-            <dd>09:00–18:00</dd>
-            <dt><strong>Föstudaga</strong></dt>
-            <dd>10:00–22:00</dd>
-            <dt><strong>Laugardaga</strong></dt>
-            <dd>11:00–22:00</dd>
-            <dt><strong>Sunnudaga</strong></dt>
-            <dd>Lokað</dd>
+          <dt>Mánudaga til fimmtudaga</dt>
+          <dd>09:00–18:00</dd>
+          <dt>Föstudaga</dt>
+          <dd>10:00–22:00</dd>
+          <dt>Laugardaga</dt>
+          <dd>11:00–22:00</dd>
+          <dt>Sunnudaga</dt>
+          <dd>Lokað</dd>
         </dl>
+      </section>
 
-    </div>
-
-
-    <section>
-
+      <section class="box">
         <h3>Um okkur</h3>
         <p>Við erum hresst fólk sem útbýr mat alla daga nema sunnudaga.</p>
-        <p><a href="sidur/about.html">Lesa meira um okkur</a></p>
+        <a href="./sidur/about.html">Lesa meira um okkur</a>
+      </section>
 
-    </section>
-    
-    <section>
-
+      <section class="box">
         <h3>Matseðill</h3>
         <p>Skoðaðu matseðilinn okkar!</p>
-        <p><a href="sidur/menu.html">Skoða matseðilinn</a></p>
+        <a href="./sidur/menu.html">Skoða matseðilinn</a>
+      </section>
 
-    </section>
-    
-    <section>
-
+      <section class="box">
         <h3>Panta</h3>
         <p>Pantaðu borð eða mat heim til þín!</p>
-        <p><a href="sidur/order.html">Senda inn pöntun</a></p>
+        <a href="./sidur/order.html">Senda inn pöntun</a>
+      </section>
+    </div>
+
+    <section class="popular">
+      <h2>Vinsælir réttir</h2>
+
+      <ul class="boxes">
+        <li class="box">
+          <h3>Súpa dagsins</h3>
+          <p>Daglega ný súpa</p>
+          <p>2.100 kr.-</p>
+          <a href="./sidur/panta.html">Panta</a>
+        </li>
+        <li class="box">
+          <h3>Lasagna</h3>
+          <p>Lasagna með fersku salati</p>
+          <p>2.500 kr.-</p>
+          <a href="./sidur/order.html">Panta</a>
+        </li>
+        <li class="box">
+          <h3>Pizza</h3>
+          <p>Klassísk pizza</p>
+          <p>2.000 kr.-</p>
+          <a href="./sidur/order.html">Panta</a>
+        </li>
+        <li class="box">
+          <h3>Hamborgari</h3>
+          <p>Hamborgari með frönskum kartöflum</p>
+          <p>2.500 kr.-</p>
+          <a href="./sidur/order.html">Panta</a>
+        </li>
+      </ul>
+      <p><a href="./sidur/menu.html">Skoða matseðil</a> eða <a href="./sidur/panta.html">panta</a>.</p>
     </section>
-    
+  </main>
+
+  <footer>
+    <section>
+      <h2>Opnunartími</h2>
+      <dl>
+        <dt>Mánudaga til fimmtudaga</dt>
+        <dd>09:00–18:00</dd>
+        <dt>Föstudaga</dt>
+        <dd>10:00–22:00</dd>
+        <dt>Laugardaga</dt>
+        <dd>11:00–22:00</dd>
+        <dt>Sunnudaga</dt>
+        <dd>Lokað</dd>
+      </dl>
+    </section>
 
     <section>
-        
-        <h2>Vinsælir réttir</h2>
-        <ol>
-            <li>
-                <div>
-                <h3>Lasagna</h3>
-                <p>Lasagna með fersku salati</p>
-                <p><strong>2500</strong></p>
-                </div>
-            </li>
-            <li>
-                <div>
-                <h3>Sveppa risotto</h3>
-                <p>Kremkennt risotto með sveppum og fersku grænmeti</p>
-                <p><strong>2500</strong></p>
-                </div>
-            </li>
-            <li>
-                <div>
-                <h3>Quesadilla</h3>
-                <p>Quesadilla með osti og fersku salsa</p>
-                <p><strong>2100</strong></p>
-                </div>
-            </li>
-        </ol>
-    
-        <footer>
-            <div>
-    
-                <dl>
-                    <dt><strong>Mánudaga til fimmtudaga</strong></dt>
-                    <dd>09:00–18:00</dd>
-                    <dt><strong>Föstudaga</strong></dt>
-                    <dd>10:00–22:00</dd>
-                    <dt><strong>Laugardaga</strong></dt>
-                    <dd>11:00–22:00</dd>
-                    <dt><strong>Sunnudaga</strong></dt>
-                    <dd>Lokað</dd>
-                </dl>
-
+      <h2>Hér erum við</h2>
+      <ul>
+        <li>Veitingastaðurinn ehf.</li>
+        <li>Aðalgata 10</li>
+        <li>100 Reykjavík</li>
+        <li><a href="tel:3334567">Sími 333-4567</a></li>
+        <li>
+          <a href="mailto:lawless86@example.org">lawless86@example.org</a>
+        </li>
+      </ul>
     </section>
-    
-
-        </div>
-
-        <div>
-
-            <dl>
-                <dt>Lawless86 ehf.</dt>
-                <dt>Aðalgata 10</dt>
-                <dt>100 Reykjavík</dt>
-                <dt>Sími 333-4567</dt>
-                <dt>Lawless@example.org</dt>
-            </dl>
-
-        </div>
-    </footer>
-
+  </footer>
 </body>
+
 </html>
